@@ -1,0 +1,141 @@
+::before,
+::after,
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-highlight: #C89F04;
+    --color-accent: #071A4C;
+    --color-text-light: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    margin: 0 5vw;
+    height: 100%;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.header {
+    background-color: black;
+    color: var(--color-text-light);
+    height: 8vh;
+}
+
+.header__nav {
+    font-size: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__elements{
+    margin: 0 1.5em;
+}
+
+.header__elments--logo {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* MAIN CONTENT */
+
+main {
+    margin: 0;
+    height: 92vh;
+}
+
+.content {
+    height: 100%;
+}
+
+.content__container {
+    height: 100%;
+}
+
+.content__item {
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    )
+}
+
+/* CONTENT NAV */
+.content__nav {
+    transform: rotate(90deg);
+    position: relative;
+    left: 70%;
+    top: -50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1;
+    color: var(--color-text-light);
+}
+
+.content__nav-item {
+    margin: 0 1.5em;
+}
+
+/* VIDEO */
+.content__video {
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+/* ITEM TEXT */
+.content__info {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: var(--color-text-light);
+}
+
+.content__num {
+    font-size: 20rem;
+    margin: 0;
+}
+
+.content__title {
+    font-size: 10rem;
+    margin: 0;
+}
+
+.content__text {
+    font-size: 2rem;
+    width: 50%;
+}
