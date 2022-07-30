@@ -87,6 +87,35 @@ main {
     )
 }
 
+.hidden {
+    display: none;
+}
+.content__info {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: var(--color-text-light);
+}
+
+.content__num {
+    font-size: 20rem;
+    margin: 0;
+}
+
+.content__title {
+    font-size: 10rem;
+    margin: 0;
+}
+
+.content__text {
+    font-size: 2rem;
+    width: 50%;
+}
+
+.content__nav {
+    color: red;
+}
+
 /* CONTENT NAV */
 .content__nav {
     transform: rotate(90deg);
@@ -117,25 +146,8 @@ main {
     transform: translate(-50%, -50%);
 }
 
-/* ITEM TEXT */
-.content__info {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color: var(--color-text-light);
-}
 
-.content__num {
-    font-size: 20rem;
-    margin: 0;
-}
 
-.content__title {
-    font-size: 10rem;
-    margin: 0;
-}
+/* CONTENT */
 
-.content__text {
-    font-size: 2rem;
-    width: 50%;
-}
+
