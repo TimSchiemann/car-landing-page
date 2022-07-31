@@ -1,18 +1,24 @@
 function cycleContent(){
-    let contentItems = Array.from(document.querySelectorAll('.content__item'))
+    let contentItems = [...document.querySelectorAll('.content__item')]
+    // let iframes = [...document.querySelectorAll('.content__video')]
+    let navItems = [...document.querySelectorAll('.content__nav-item')]
     let currentItem = 0
+
+    /* DISPLAY DIFFERENT CONTENT */
     function swapContent(){
         currentItem < contentItems.length - 1? currentItem++ : currentItem = 0
         contentItems[currentItem].classList.remove('hidden')
-        contentItems.forEach((item, index) => {
-            if(index !== currentItem){
-                item.classList.add('hidden')
-            }    
-        })
+        navItems[currentItem].classList.add('highlight')
+        for(let i=0; i<contentItems.length; i++){
+            if(i !== currentItem){
+                contentItems[i].classList.add('hidden')
+                navItems[i].classList.remove('highlight')
+            }
+        }
     }
     setInterval(swapContent, 10000);
 }
 
 
-// cycleContent()
+cycleContent()
 
