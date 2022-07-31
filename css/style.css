@@ -6,13 +6,14 @@
 
 :root {
     font-size: 62.5%;
-    --color-highlight: #C89F04;
+    --color-text-highlight: #990000;
     --color-accent: #071A4C;
     --color-text-light: #fff;
+    
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 img {
@@ -34,6 +35,10 @@ ol, ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:hover {
+    cursor: default;
 }
 
 /* NAVIGATION */
@@ -92,7 +97,7 @@ main {
 }
 .content__info {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 10%;
     color: var(--color-text-light);
 }
@@ -100,6 +105,7 @@ main {
 .content__num {
     font-size: 20rem;
     margin: 0;
+    color: var(--color-text-highlight);
 }
 
 .content__title {
@@ -114,7 +120,7 @@ main {
 }
 
 .content__nav {
-    color: red;
+    color: var(--color-text-highlight)
 }
 
 /* CONTENT NAV */
@@ -126,7 +132,7 @@ main {
     width: 50%;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     z-index: 1;
     color: var(--color-text-light);
 }
@@ -136,7 +142,7 @@ main {
 }
 
 .highlight {
-    color: red;
+    color: var(--color-text-highlight)
 }
 
 /* VIDEO */
@@ -158,6 +164,5 @@ iframe {
     max-height: 100%;
 }
 
-/* CONTENT */
 
 
