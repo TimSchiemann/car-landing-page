@@ -1,6 +1,5 @@
 function cycleContent(){
     let contentItems = [...document.querySelectorAll('.content__item')]
-    // let iframes = [...document.querySelectorAll('.content__video')]
     let navItems = [...document.querySelectorAll('.content__nav-item')]
     let currentItem = 0
     console.log(contentItems)
@@ -20,6 +19,5 @@ function cycleContent(){
     }
     setInterval(swapContent, 10000);
 }
-
 cycleContent()
 
