@@ -8,11 +8,11 @@ A simple landing page for a performance shop. The site is build around a mobile 
 ## How It's Made:
 **Tech used:** HTML, CSS, JavaScript
 
-This static website features a media centric approach while being mobile friendly. It works on a multitude of devices and adapts to the user. The dynamic effect is achieved by looping through different videos on the desktop version. In order to preserve the limited data a mobile user may have, it also includes a fallback option that shows images instead. The main feature is the rotation of the content, which is achieved by using a timed loop in javascript which periodically hides/unveils different sections. 
+This static website features a media centric approach while being mobile friendly. It works on a multitude of devices and adapts to the user. The dynamic effect is achieved by looping through different videos on the desktop version. In order to preserve the limited data a mobile user may have, it also includes a fallback option that shows images instead. The main feature is the rotation of the content, which is achieved by using a timed loop in javascript which periodically hides/unveils different sections.
 
 
 ## Optimizations
-This project started out centered entirely around embedded videos. However I uncovered issues with recent changes to how Youtube handles embedded videos. Given more time I would therefore switch to a different video hoster in order to have full control over the video player. This improvement should enable an easier integration as well as an increase in the quality of the content. 
+This project started out centered entirely around embedded videos. However I uncovered issues with recent changes to how Youtube handles embedded videos. Given more time I would therefore switch to a different video hoster in order to have full control over the video player. This improvement should enable an easier integration as well as an increase in the quality of the content. The site currently has no landscape layout for mobile devices, and the text has not yet been optimized for readability.
 
 ## Lessons Learned:
 That you should not rely on Youtube to embed videos on your website.
