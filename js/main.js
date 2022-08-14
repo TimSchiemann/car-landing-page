@@ -1,3 +1,4 @@
+/* CYCLE VIDEOS */
 function cycleContent(){
     let contentItems = [...document.querySelectorAll('.content__item')]
     let navItems = [...document.querySelectorAll('.content__nav-item')]
@@ -17,7 +18,29 @@ function cycleContent(){
             }
         }
     }
-    setInterval(swapContent, 10000);
+    setInterval(swapContent, 11000);
 }
-cycleContent()
 
+
+/* REPLACE VIDEOS ON MOBILE */
+function replaceVideos(){
+    const videos = [...document.querySelectorAll('.content__video')]
+    let contentItems = [...document.querySelectorAll('.content__item')]
+    videos.map(video => video.classList.add('hidden'))
+
+    contentItems.map((contentItem, i) => {
+        const img = document.createElement('img')
+        img.setAttribute('src', `./images/${i}.jpg`)
+        img.classList.add('content__img')
+        contentItem.appendChild(img)
+    })
+    cycleContent()
+}
+
+
+/* DETECT IF ON MOBILE OR DESKTOP */
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    replaceVideos()
+   } else {
+    cycleContent()
+   }

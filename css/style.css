@@ -158,6 +158,12 @@ main {
     color: var(--color-text-highlight)
 }
 
+.content__img {
+    width: 100vw;
+    height: 90vh;
+    /* filter: brightness(90%); */
+}
+
 /* VIDEO */
 .content__video {
     pointer-events: none;
@@ -180,6 +186,9 @@ iframe {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 800px){
+    :root {
+        font-size: 80%;
+    }
     .header__elements{
         margin: 0.5em;
     }
@@ -201,5 +210,11 @@ iframe {
     }
     .content__text {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    :root {
+        font-size: 50%;
     }
 }
