@@ -1,7 +1,7 @@
 # Tuning Shop Landing Page
 A simple landing page for a performance shop. The site is build around a mobile first approach and features changing background images and videos. 
 
-![alt tag](https://user-images.githubusercontent.com/85764795/184556710-e7c84dd3-cdc3-451e-92c7-b0ebce50e705.png)
+![alt tag](https://user-images.githubusercontent.com/85764795/184610626-9df406aa-6c65-4aca-93ac-7262894ea180.png)
 
 **Link to project:** [Here](https://car-tuning.netlify.app/)
 
@@ -12,7 +12,7 @@ This static website features a media centric approach while being mobile friendl
 
 
 ## Optimizations
-This project started out centered entirely around embedded videos. However I uncovered issues with recent changes to how Youtube handles embedded videos. Given more time I would therefore switch to a different video hoster in order to have full control over the video player. This improvement should enable an easier integration as well as an increase in the quality of the content. The site currently has no landscape layout for mobile devices, and the text has not yet been optimized for readability.
+This project started out centered entirely around embedded videos. However I uncovered issues with recent changes to how Youtube handles embedded videos. Given more time I would therefore switch to a different video hoster in order to have full control over the video player. This improvement should enable an easier integration as well as an increase in the quality of the content. The mobile version is currently not optimised and requires some more attention to polish it. 
 
 ## Lessons Learned:
 That you should not rely on Youtube to embed videos on your website.
